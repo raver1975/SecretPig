@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/secretpig.iml" filepath="$PROJECT_DIR$/.idea/modules/secretpig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/secretpig_main.iml" filepath="$PROJECT_DIR$/.idea/modules/secretpig_main.iml" group="secretpig" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/secretpig_test.iml" filepath="$PROJECT_DIR$/.idea/modules/secretpig_test.iml" group="secretpig" />
+    </modules>
+  </component>
+</project>
