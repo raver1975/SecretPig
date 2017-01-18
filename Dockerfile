@@ -1,4 +1,5 @@
 FROM ubuntu:15.04
+
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y  software-properties-common && \
@@ -7,8 +8,6 @@ RUN apt-get update && \
     echo oracle-java7-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \
     apt-get install -y oracle-java8-installer && \
     apt-get clean
-RUN apt-get update && apt-get install -y \
-    software-properties-common
 RUN add-apt-repository universe
 RUN apt-get update && apt-get install -y \
     apache2 \
@@ -20,8 +19,6 @@ RUN apt-get update && apt-get install -y \
     php5-mysql \
     python3.4 \
     python3-pip
-
-
 COPY ./src /usr/src/myapp
 WORKDIR /usr/src/myapp
 RUN javac Main.java
